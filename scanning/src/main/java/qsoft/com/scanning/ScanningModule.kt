@@ -6,7 +6,7 @@ import android.content.Intent
 import android.content.IntentFilter
 
 
-object Scanning123 {
+object ScanningModule {
 
     private var cb: ((String) -> Unit)? = null
 

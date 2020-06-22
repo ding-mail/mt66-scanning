@@ -20,13 +20,12 @@ class MainActivity : AppCompatActivity() {
      */
     override fun onResume() {
         super.onResume()
-
-        Scanning.registerReceiver(this, this::showBar)
+        ScanningModule.registerReceiver(this, this::showBar)
     }
 
     override fun onPause() {
         super.onPause()
 
-        Scanning.unregisterReceiver(this)
+        ScanningModule.unregisterReceiver(this)
     }
 }
